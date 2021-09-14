@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import * as Joi from 'joi';
 import { AudioModule } from './audio/audio.module';
+import { PuppeteerModule } from './puppeteer/puppeteer.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { AudioModule } from './audio/audio.module';
       redis: process.env.REDIS_API_CACHE_URL,
     }),
     AudioModule,
+    PuppeteerModule,
   ],
   controllers: [AppController],
   providers: [AppService],

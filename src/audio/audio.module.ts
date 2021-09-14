@@ -25,8 +25,7 @@ export class AudioModule {
   private readonly logger = new Logger();
   constructor() {
     this.logger.verbose(
-      'REDIS_API_CACHE_URL : ',
-      process.env.REDIS_API_CACHE_URL,
+      `REDIS_API_CACHE_URL : ${process.env.REDIS_API_CACHE_URL}`,
     );
   }
 }

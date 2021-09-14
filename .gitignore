@@ -1,5 +1,6 @@
 .env.dev
 .env.test
+UserData
 # compiled output
 /dist
 /node_modules
