@@ -11,6 +11,7 @@ const sleep = async (ms: number) => new Promise((res) => setTimeout(res, ms));
 @Processor('audio')
 export class AudioProcessor {
   private readonly logger = new Logger();
+
   @Process('transcode')
   async handleTranscode(job: Job) {
     this.logger.verbose('transcode start...', job.data);
